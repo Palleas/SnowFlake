@@ -8,30 +8,32 @@
 
 import Cocoa
 import CryptoSwift
+import ReactiveCocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
 
-
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         let desktop = NSSearchPathForDirectoriesInDomains(.DesktopDirectory, .UserDomainMask, true).first!
 
-        let enumerator = NSFileManager.defaultManager().enumeratorAtPath(desktop)?
+        let handler = FileHandler()
+
+        let files = NSFileManager.defaultManager().enumeratorAtURL(NSURL(fileURLWithPath: desktop), includingPropertiesForKeys: nil, options: .SkipsHiddenFiles, errorHandler: nil)!
             .filter({ $0.pathExtension == "jpg" })
-            .map({ $0 as! String })
-        for file in enumerator! {
-            let fullpath = desktop + "/" + file
-            do {
-                let data = try NSData(contentsOfFile: fullpath, options: .DataReadingUncached)
-                let hash = data.arrayOfBytes().crc32().toHexString()
-                print("\(file): \(hash)")
-            } catch {
-                print("Error = \(error)")
+            .map({ ($0 as! NSURL).path! })
+
+        let _ = SignalProducer<String, FileHandlerError>(values: files)
+            .flatMap(.Latest) { path -> SignalProducer<File, FileHandlerError> in
+                print("Path = \(path)")
+                return handler.openFile(path)
+            }
+            .on(failed: { print("Got error: \($0)")})
+            .startWithNext { file in
+                print("File \(file.path) (\(file.hash!))")
             }
 
-        }
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A52EC981D2C773700EF6C70 /* SnowFlakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A52EC971D2C773700EF6C70 /* SnowFlakeTests.swift */; };
+		7A52ECA01D2C774A00EF6C70 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A52EC9F1D2C774A00EF6C70 /* File.swift */; };
+		7A52ECA21D2C783E00EF6C70 /* FileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A52ECA11D2C783E00EF6C70 /* FileTests.swift */; };
+		7A52ECA31D2C786B00EF6C70 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A52EC9F1D2C774A00EF6C70 /* File.swift */; };
+		7A52ECA61D2C797900EF6C70 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A52ECA41D2C797900EF6C70 /* ReactiveCocoa.framework */; };
+		7A52ECA71D2C797900EF6C70 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A52ECA41D2C797900EF6C70 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A52ECA81D2C797900EF6C70 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A52ECA51D2C797900EF6C70 /* Result.framework */; };
+		7A52ECA91D2C797900EF6C70 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A52ECA51D2C797900EF6C70 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A52ECAA1D2C79CA00EF6C70 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A52ECA41D2C797900EF6C70 /* ReactiveCocoa.framework */; };
+		7A52ECAB1D2C79CA00EF6C70 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A52ECA51D2C797900EF6C70 /* Result.framework */; };
+		7A52ECAC1D2C79CA00EF6C70 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9E30291D2C5B5300618714 /* CryptoSwift.framework */; };
+		7A52ECAE1D2C7A2200EF6C70 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7A52ECA41D2C797900EF6C70 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A52ECAF1D2C7A2200EF6C70 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7A52ECA51D2C797900EF6C70 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A52ECB01D2C7A2200EF6C70 /* CryptoSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7A9E30291D2C5B5300618714 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A52ECB31D2C7A3A00EF6C70 /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A52ECB21D2C7A3A00EF6C70 /* FileHandler.swift */; };
 		7A9E301D1D2C5B0B00618714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9E301C1D2C5B0B00618714 /* AppDelegate.swift */; };
 		7A9E301F1D2C5B0B00618714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9E301E1D2C5B0B00618714 /* Assets.xcassets */; };
 		7A9E30221D2C5B0B00618714 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A9E30201D2C5B0B00618714 /* MainMenu.xib */; };
@@ -14,14 +29,38 @@
 		7A9E302E1D2C5B9C00618714 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9E30291D2C5B5300618714 /* CryptoSwift.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7A52EC9A1D2C773700EF6C70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A9E30111D2C5B0B00618714 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A9E30181D2C5B0B00618714;
+			remoteInfo = SnowFlake;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		7A52ECAD1D2C7A1B00EF6C70 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7A52ECAE1D2C7A2200EF6C70 /* ReactiveCocoa.framework in CopyFiles */,
+				7A52ECAF1D2C7A2200EF6C70 /* Result.framework in CopyFiles */,
+				7A52ECB01D2C7A2200EF6C70 /* CryptoSwift.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A9E302D1D2C5B9700618714 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7A52ECA91D2C797900EF6C70 /* Result.framework in Embed Frameworks */,
 				7A9E302C1D2C5B9700618714 /* CryptoSwift.framework in Embed Frameworks */,
+				7A52ECA71D2C797900EF6C70 /* ReactiveCocoa.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -29,6 +68,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7A52EC951D2C773700EF6C70 /* SnowFlakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnowFlakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A52EC971D2C773700EF6C70 /* SnowFlakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowFlakeTests.swift; sourceTree = "<group>"; };
+		7A52EC991D2C773700EF6C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A52EC9F1D2C774A00EF6C70 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		7A52ECA11D2C783E00EF6C70 /* FileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTests.swift; sourceTree = "<group>"; };
+		7A52ECA41D2C797900EF6C70 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		7A52ECA51D2C797900EF6C70 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		7A52ECB21D2C7A3A00EF6C70 /* FileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
 		7A9E30191D2C5B0B00618714 /* SnowFlake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowFlake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A9E301C1D2C5B0B00618714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A9E301E1D2C5B0B00618714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,22 +85,55 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7A52EC921D2C773700EF6C70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A52ECAA1D2C79CA00EF6C70 /* ReactiveCocoa.framework in Frameworks */,
+				7A52ECAB1D2C79CA00EF6C70 /* Result.framework in Frameworks */,
+				7A52ECAC1D2C79CA00EF6C70 /* CryptoSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A9E30161D2C5B0B00618714 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A52ECA81D2C797900EF6C70 /* Result.framework in Frameworks */,
 				7A9E302E1D2C5B9C00618714 /* CryptoSwift.framework in Frameworks */,
+				7A52ECA61D2C797900EF6C70 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A52EC961D2C773700EF6C70 /* SnowFlakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A52EC971D2C773700EF6C70 /* SnowFlakeTests.swift */,
+				7A52EC991D2C773700EF6C70 /* Info.plist */,
+				7A52ECA11D2C783E00EF6C70 /* FileTests.swift */,
+			);
+			path = SnowFlakeTests;
+			sourceTree = "<group>";
+		};
+		7A52ECB11D2C7A2700EF6C70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A52ECA41D2C797900EF6C70 /* ReactiveCocoa.framework */,
+				7A52ECA51D2C797900EF6C70 /* Result.framework */,
+				7A9E30291D2C5B5300618714 /* CryptoSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7A9E30101D2C5B0B00618714 = {
 			isa = PBXGroup;
 			children = (
-				7A9E30291D2C5B5300618714 /* CryptoSwift.framework */,
+				7A52ECB11D2C7A2700EF6C70 /* Frameworks */,
 				7A9E301B1D2C5B0B00618714 /* SnowFlake */,
+				7A52EC961D2C773700EF6C70 /* SnowFlakeTests */,
 				7A9E301A1D2C5B0B00618714 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				7A9E30191D2C5B0B00618714 /* SnowFlake.app */,
+				7A52EC951D2C773700EF6C70 /* SnowFlakeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +154,8 @@
 				7A9E301E1D2C5B0B00618714 /* Assets.xcassets */,
 				7A9E30201D2C5B0B00618714 /* MainMenu.xib */,
 				7A9E30231D2C5B0B00618714 /* Info.plist */,
+				7A52EC9F1D2C774A00EF6C70 /* File.swift */,
+				7A52ECB21D2C7A3A00EF6C70 /* FileHandler.swift */,
 			);
 			path = SnowFlake;
 			sourceTree = "<group>";
@@ -80,6 +163,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7A52EC941D2C773700EF6C70 /* SnowFlakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A52EC9E1D2C773700EF6C70 /* Build configuration list for PBXNativeTarget "SnowFlakeTests" */;
+			buildPhases = (
+				7A52EC911D2C773700EF6C70 /* Sources */,
+				7A52EC921D2C773700EF6C70 /* Frameworks */,
+				7A52EC931D2C773700EF6C70 /* Resources */,
+				7A52ECAD1D2C7A1B00EF6C70 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A52EC9B1D2C773700EF6C70 /* PBXTargetDependency */,
+			);
+			name = SnowFlakeTests;
+			productName = SnowFlakeTests;
+			productReference = 7A52EC951D2C773700EF6C70 /* SnowFlakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7A9E30181D2C5B0B00618714 /* SnowFlake */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A9E30261D2C5B0B00618714 /* Build configuration list for PBXNativeTarget "SnowFlake" */;
@@ -108,6 +210,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Perfectly-Cooked";
 				TargetAttributes = {
+					7A52EC941D2C773700EF6C70 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 7A9E30181D2C5B0B00618714;
+					};
 					7A9E30181D2C5B0B00618714 = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -127,11 +233,19 @@
 			projectRoot = "";
 			targets = (
 				7A9E30181D2C5B0B00618714 /* SnowFlake */,
+				7A52EC941D2C773700EF6C70 /* SnowFlakeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7A52EC931D2C773700EF6C70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A9E30171D2C5B0B00618714 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,15 +258,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7A52EC911D2C773700EF6C70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A52EC981D2C773700EF6C70 /* SnowFlakeTests.swift in Sources */,
+				7A52ECA31D2C786B00EF6C70 /* File.swift in Sources */,
+				7A52ECA21D2C783E00EF6C70 /* FileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A9E30151D2C5B0B00618714 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A52ECB31D2C7A3A00EF6C70 /* FileHandler.swift in Sources */,
 				7A9E301D1D2C5B0B00618714 /* AppDelegate.swift in Sources */,
+				7A52ECA01D2C774A00EF6C70 /* File.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A52EC9B1D2C773700EF6C70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A9E30181D2C5B0B00618714 /* SnowFlake */;
+			targetProxy = 7A52EC9A1D2C773700EF6C70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7A9E30201D2C5B0B00618714 /* MainMenu.xib */ = {
@@ -166,6 +300,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7A52EC9C1D2C773700EF6C70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = SnowFlakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.perfectly-cooked.SnowFlakeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnowFlake.app/Contents/MacOS/SnowFlake";
+			};
+			name = Debug;
+		};
+		7A52EC9D1D2C773700EF6C70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = SnowFlakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.perfectly-cooked.SnowFlakeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnowFlake.app/Contents/MacOS/SnowFlake";
+			};
+			name = Release;
+		};
 		7A9E30241D2C5B0B00618714 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -253,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -269,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -283,6 +455,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7A52EC9E1D2C773700EF6C70 /* Build configuration list for PBXNativeTarget "SnowFlakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A52EC9C1D2C773700EF6C70 /* Debug */,
+				7A52EC9D1D2C773700EF6C70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7A9E30141D2C5B0B00618714 /* Build configuration list for PBXProject "SnowFlake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -299,6 +479,7 @@
 				7A9E30281D2C5B0B00618714 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
