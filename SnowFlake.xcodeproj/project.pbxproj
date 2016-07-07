@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7A35BDA61D2DC4760015776D /* DropzoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A35BDA51D2DC4760015776D /* DropzoneViewController.swift */; };
+		7A35BDA81D2EBEF50015776D /* Rex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A35BDA71D2EBEF50015776D /* Rex.framework */; };
+		7A35BDA91D2EBEF50015776D /* Rex.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A35BDA71D2EBEF50015776D /* Rex.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A35BDAB1D2EBF4A0015776D /* DropzoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A35BDAA1D2EBF4A0015776D /* DropzoneViewModel.swift */; };
 		7A52EC981D2C773700EF6C70 /* SnowFlakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A52EC971D2C773700EF6C70 /* SnowFlakeTests.swift */; };
 		7A52ECA01D2C774A00EF6C70 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A52EC9F1D2C774A00EF6C70 /* File.swift */; };
 		7A52ECA21D2C783E00EF6C70 /* FileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A52ECA11D2C783E00EF6C70 /* FileTests.swift */; };
@@ -59,6 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7A35BDA91D2EBEF50015776D /* Rex.framework in Embed Frameworks */,
 				7A52ECA91D2C797900EF6C70 /* Result.framework in Embed Frameworks */,
 				7A9E302C1D2C5B9700618714 /* CryptoSwift.framework in Embed Frameworks */,
 				7A52ECA71D2C797900EF6C70 /* ReactiveCocoa.framework in Embed Frameworks */,
@@ -70,6 +74,8 @@
 
 /* Begin PBXFileReference section */
 		7A35BDA51D2DC4760015776D /* DropzoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropzoneViewController.swift; sourceTree = "<group>"; };
+		7A35BDA71D2EBEF50015776D /* Rex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rex.framework; path = Carthage/Build/Mac/Rex.framework; sourceTree = "<group>"; };
+		7A35BDAA1D2EBF4A0015776D /* DropzoneViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropzoneViewModel.swift; sourceTree = "<group>"; };
 		7A52EC951D2C773700EF6C70 /* SnowFlakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnowFlakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A52EC971D2C773700EF6C70 /* SnowFlakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowFlakeTests.swift; sourceTree = "<group>"; };
 		7A52EC991D2C773700EF6C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A35BDA81D2EBEF50015776D /* Rex.framework in Frameworks */,
 				7A52ECA81D2C797900EF6C70 /* Result.framework in Frameworks */,
 				7A9E302E1D2C5B9C00618714 /* CryptoSwift.framework in Frameworks */,
 				7A52ECA61D2C797900EF6C70 /* ReactiveCocoa.framework in Frameworks */,
@@ -123,6 +130,7 @@
 		7A52ECB11D2C7A2700EF6C70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A35BDA71D2EBEF50015776D /* Rex.framework */,
 				7A52ECA41D2C797900EF6C70 /* ReactiveCocoa.framework */,
 				7A52ECA51D2C797900EF6C70 /* Result.framework */,
 				7A9E30291D2C5B5300618714 /* CryptoSwift.framework */,
@@ -159,6 +167,7 @@
 				7A52EC9F1D2C774A00EF6C70 /* File.swift */,
 				7A52ECB21D2C7A3A00EF6C70 /* FileHandler.swift */,
 				7A35BDA51D2DC4760015776D /* DropzoneViewController.swift */,
+				7A35BDAA1D2EBF4A0015776D /* DropzoneViewModel.swift */,
 			);
 			path = SnowFlake;
 			sourceTree = "<group>";
@@ -279,6 +288,7 @@
 				7A9E301D1D2C5B0B00618714 /* AppDelegate.swift in Sources */,
 				7A52ECA01D2C774A00EF6C70 /* File.swift in Sources */,
 				7A35BDA61D2DC4760015776D /* DropzoneViewController.swift in Sources */,
+				7A35BDAB1D2EBF4A0015776D /* DropzoneViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -684,13 +684,34 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VFL-W0-dmy">
+                        <rect key="frame" x="141" y="129" width="198" height="32"/>
+                        <buttonCell key="cell" type="push" title="Select some files, maybe?" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XC9-Zo-h6n">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OfQ-ZX-lOe">
+                        <rect key="frame" x="192" y="99" width="97" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0 files selected" id="vey-bu-0xh">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
                 <constraints>
                     <constraint firstItem="lt6-dc-v05" firstAttribute="centerY" secondItem="EiT-Mj-1SZ" secondAttribute="centerY" id="6Dk-Zf-DpT"/>
+                    <constraint firstItem="OfQ-ZX-lOe" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="CuC-Xy-chb"/>
                     <constraint firstItem="lt6-dc-v05" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="Ols-oL-PFV"/>
+                    <constraint firstItem="VFL-W0-dmy" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="kD8-UK-jEg"/>
+                    <constraint firstItem="OfQ-ZX-lOe" firstAttribute="top" secondItem="VFL-W0-dmy" secondAttribute="bottom" constant="20" id="shV-Z1-n1Y"/>
+                    <constraint firstItem="VFL-W0-dmy" firstAttribute="top" secondItem="lt6-dc-v05" secondAttribute="bottom" constant="15" id="uNi-xe-wgE"/>
                 </constraints>
                 <connections>
+                    <outlet property="browseButton" destination="VFL-W0-dmy" id="vEA-mW-IAv"/>
                     <outlet property="message" destination="lt6-dc-v05" id="8ev-UX-IPj"/>
+                    <outlet property="selectionCount" destination="OfQ-ZX-lOe" id="EMt-nt-gV6"/>
                 </connections>
             </view>
         </window>
