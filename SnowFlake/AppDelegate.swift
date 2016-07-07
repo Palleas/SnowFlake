@@ -14,8 +14,11 @@ import ReactiveCocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
+//    private let dropzoneViewController = DropzoneViewController()
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
+//        window.contentView = dropzoneViewController.view
+
         let desktop = NSSearchPathForDirectoriesInDomains(.DesktopDirectory, .UserDomainMask, true).first!
 
         let handler = FileHandler()
@@ -35,11 +38,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
 
     }
-
-    func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
-    }
-
 
 }
 

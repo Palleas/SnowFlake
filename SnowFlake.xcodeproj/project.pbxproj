@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A35BDA61D2DC4760015776D /* DropzoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A35BDA51D2DC4760015776D /* DropzoneViewController.swift */; };
 		7A52EC981D2C773700EF6C70 /* SnowFlakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A52EC971D2C773700EF6C70 /* SnowFlakeTests.swift */; };
 		7A52ECA01D2C774A00EF6C70 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A52EC9F1D2C774A00EF6C70 /* File.swift */; };
 		7A52ECA21D2C783E00EF6C70 /* FileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A52ECA11D2C783E00EF6C70 /* FileTests.swift */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7A35BDA51D2DC4760015776D /* DropzoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropzoneViewController.swift; sourceTree = "<group>"; };
 		7A52EC951D2C773700EF6C70 /* SnowFlakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnowFlakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A52EC971D2C773700EF6C70 /* SnowFlakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowFlakeTests.swift; sourceTree = "<group>"; };
 		7A52EC991D2C773700EF6C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				7A9E30231D2C5B0B00618714 /* Info.plist */,
 				7A52EC9F1D2C774A00EF6C70 /* File.swift */,
 				7A52ECB21D2C7A3A00EF6C70 /* FileHandler.swift */,
+				7A35BDA51D2DC4760015776D /* DropzoneViewController.swift */,
 			);
 			path = SnowFlake;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				7A52ECB31D2C7A3A00EF6C70 /* FileHandler.swift in Sources */,
 				7A9E301D1D2C5B0B00618714 /* AppDelegate.swift in Sources */,
 				7A52ECA01D2C774A00EF6C70 /* File.swift in Sources */,
+				7A35BDA61D2DC4760015776D /* DropzoneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +466,7 @@
 				7A52EC9D1D2C773700EF6C70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A9E30141D2C5B0B00618714 /* Build configuration list for PBXProject "SnowFlake" */ = {
 			isa = XCConfigurationList;
