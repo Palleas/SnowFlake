@@ -25,6 +25,8 @@ struct DropzoneViewModel {
                 panel.beginWithCompletionHandler { result in
                     let paths = panel.URLs.filter { $0.path != nil }.map { $0.path! }
                     filesProperty.value = paths
+
+                    sink.sendCompleted()
                 }
 
             }

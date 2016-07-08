@@ -670,29 +670,51 @@
         <window title="SnowFlake" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="281"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <value key="minSize" type="size" width="480" height="281"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ" customClass="DropzoneView" customModule="SnowFlake" customModuleProvider="target">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="281"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lt6-dc-v05">
-                        <rect key="frame" x="222" y="172" width="37" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="bD2-J5-R8D">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VFL-W0-dmy">
-                        <rect key="frame" x="141" y="129" width="198" height="32"/>
+                        <rect key="frame" x="268" y="13" width="198" height="32"/>
                         <buttonCell key="cell" type="push" title="Select some files, maybe?" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XC9-Zo-h6n">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
+                    <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06w-a1-yi9">
+                        <rect key="frame" x="20" y="61" width="440" height="200"/>
+                        <clipView key="contentView" id="d32-39-hja">
+                            <rect key="frame" x="1" y="1" width="438" height="198"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <collectionView id="xVZ-Qh-cFo">
+                                    <rect key="frame" x="0.0" y="0.0" width="438" height="198"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="9Lk-oC-zic">
+                                        <size key="itemSize" width="100" height="100"/>
+                                    </collectionViewFlowLayout>
+                                    <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="xCl-QI-Osz" id="wNn-n2-a48"/>
+                                        <outlet property="delegate" destination="xCl-QI-Osz" id="ktc-aa-m1v"/>
+                                    </connections>
+                                </collectionView>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="1BO-q6-CDb">
+                            <rect key="frame" x="1" y="144" width="233" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cyh-Yb-zkk">
+                            <rect key="frame" x="234" y="1" width="15" height="143"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OfQ-ZX-lOe">
-                        <rect key="frame" x="192" y="99" width="97" height="17"/>
+                        <rect key="frame" x="169" y="22" width="97" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0 files selected" id="vey-bu-0xh">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -701,19 +723,22 @@
                     </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="lt6-dc-v05" firstAttribute="centerY" secondItem="EiT-Mj-1SZ" secondAttribute="centerY" id="6Dk-Zf-DpT"/>
-                    <constraint firstItem="OfQ-ZX-lOe" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="CuC-Xy-chb"/>
-                    <constraint firstItem="lt6-dc-v05" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="Ols-oL-PFV"/>
-                    <constraint firstItem="VFL-W0-dmy" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="kD8-UK-jEg"/>
-                    <constraint firstItem="OfQ-ZX-lOe" firstAttribute="top" secondItem="VFL-W0-dmy" secondAttribute="bottom" constant="20" id="shV-Z1-n1Y"/>
-                    <constraint firstItem="VFL-W0-dmy" firstAttribute="top" secondItem="lt6-dc-v05" secondAttribute="bottom" constant="15" id="uNi-xe-wgE"/>
+                    <constraint firstItem="VFL-W0-dmy" firstAttribute="top" secondItem="06w-a1-yi9" secondAttribute="bottom" constant="20" id="3WG-EV-g2v"/>
+                    <constraint firstItem="06w-a1-yi9" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="CIq-8Q-794"/>
+                    <constraint firstAttribute="trailing" secondItem="VFL-W0-dmy" secondAttribute="trailing" constant="20" id="IyI-2i-jmV"/>
+                    <constraint firstItem="VFL-W0-dmy" firstAttribute="centerY" secondItem="OfQ-ZX-lOe" secondAttribute="centerY" id="MkK-VO-xDh"/>
+                    <constraint firstAttribute="trailing" secondItem="06w-a1-yi9" secondAttribute="trailing" constant="20" id="Xq5-TE-hq2"/>
+                    <constraint firstAttribute="bottom" secondItem="VFL-W0-dmy" secondAttribute="bottom" constant="20" id="dvm-cF-nDn"/>
+                    <constraint firstItem="VFL-W0-dmy" firstAttribute="leading" secondItem="OfQ-ZX-lOe" secondAttribute="trailing" constant="10" id="uMz-6P-7Fr"/>
+                    <constraint firstItem="06w-a1-yi9" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="x0a-Ht-jJk"/>
                 </constraints>
                 <connections>
                     <outlet property="browseButton" destination="VFL-W0-dmy" id="vEA-mW-IAv"/>
-                    <outlet property="message" destination="lt6-dc-v05" id="8ev-UX-IPj"/>
+                    <outlet property="gridView" destination="xVZ-Qh-cFo" id="I5n-bi-HWB"/>
                     <outlet property="selectionCount" destination="OfQ-ZX-lOe" id="EMt-nt-gV6"/>
                 </connections>
             </view>
+            <point key="canvasLocation" x="419" y="413.5"/>
         </window>
         <viewController id="xCl-QI-Osz" customClass="DropzoneViewController" customModule="SnowFlake" customModuleProvider="target">
             <connections>

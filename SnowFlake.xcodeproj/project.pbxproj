@@ -31,6 +31,8 @@
 		7A9E30221D2C5B0B00618714 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A9E30201D2C5B0B00618714 /* MainMenu.xib */; };
 		7A9E302C1D2C5B9700618714 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9E30291D2C5B5300618714 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A9E302E1D2C5B9C00618714 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9E30291D2C5B5300618714 /* CryptoSwift.framework */; };
+		7AA477A51D2F374F0060025D /* PhotoCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA477A31D2F374F0060025D /* PhotoCollectionViewItem.swift */; };
+		7AA477A61D2F374F0060025D /* PhotoCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA477A41D2F374F0060025D /* PhotoCollectionViewItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		7A9E30211D2C5B0B00618714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7A9E30231D2C5B0B00618714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A9E30291D2C5B5300618714 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/Mac/CryptoSwift.framework; sourceTree = "<group>"; };
+		7AA477A31D2F374F0060025D /* PhotoCollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewItem.swift; sourceTree = "<group>"; };
+		7AA477A41D2F374F0060025D /* PhotoCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,8 @@
 				7A52ECB21D2C7A3A00EF6C70 /* FileHandler.swift */,
 				7A35BDA51D2DC4760015776D /* DropzoneViewController.swift */,
 				7A35BDAA1D2EBF4A0015776D /* DropzoneViewModel.swift */,
+				7AA477A31D2F374F0060025D /* PhotoCollectionViewItem.swift */,
+				7AA477A41D2F374F0060025D /* PhotoCollectionViewItem.xib */,
 			);
 			path = SnowFlake;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 			files = (
 				7A9E301F1D2C5B0B00618714 /* Assets.xcassets in Resources */,
 				7A9E30221D2C5B0B00618714 /* MainMenu.xib in Resources */,
+				7AA477A61D2F374F0060025D /* PhotoCollectionViewItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +295,7 @@
 				7A9E301D1D2C5B0B00618714 /* AppDelegate.swift in Sources */,
 				7A52ECA01D2C774A00EF6C70 /* File.swift in Sources */,
 				7A35BDA61D2DC4760015776D /* DropzoneViewController.swift in Sources */,
+				7AA477A51D2F374F0060025D /* PhotoCollectionViewItem.swift in Sources */,
 				7A35BDAB1D2EBF4A0015776D /* DropzoneViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
